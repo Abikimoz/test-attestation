@@ -7,8 +7,8 @@ export default function solution(content){
   console.log('Count:', data.length);
 
   let cities = data.map((row) => row.split(',').at(7));
-  cities = _.uniq(cities).sort().join(', ');
-  console.log(`Cities: ${cities}`);
+  let citiesResult = _.uniq(cities).sort().join(', ');
+  console.log(`Cities: ${citiesResult}`);
 
   let humid = data.map((row) => row.split(',').at(3));
 
@@ -24,6 +24,28 @@ export default function solution(content){
   let HottestDayArr = HottestDay.split(',');
 
   console.log(`HottestDay: ${HottestDayArr[0]} ${HottestDayArr[7]}`);
+
+  // console.log(data);
+  // console.log(cities);
+  // console.log(temp);
+
+  // const value = _.uniq(cities);
+  // const storage = [[],[],[],[],[]];
+  // const maxTemps = citiesResult.map(city=>[])
+
+  // console.log(value);
+  
+
+  
+  // let value = 
+
+  // let rows = data.map((row) => row.split(','));
+  // let HottestCities = rows.map((row) => {
+  //   const city = row[7];
+  //   const temp = row[1];
+  //   return {[city]: temp}
+  // });
+  // console.log(HottestCities);
 
 
   // END
